@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    tools:context=".StartingActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/btnEnterNames"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showNew"
+            android:text="@string/enterNames" />
+
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showView"
+            android:text="@string/view" />
+
+        <Button
+            android:id="@+id/btnStore"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showStore"
+            android:text="@string/store" />
+
+        <Button
+            android:id="@+id/btnLoad"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="showLoad"
+            android:text="@string/load" />
+
+        <TextView
+            android:id="@+id/txtWarning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/margin"
+            android:paddingTop="30dp"
+            android:text="@string/autosave" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="exit"
+            android:text="@string/exit" />
+    </LinearLayout>
+
+</RelativeLayout>

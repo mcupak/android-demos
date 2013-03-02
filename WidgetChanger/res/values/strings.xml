@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Widget Changer</string>
+    <string name="menu_settings">Settings</string>
+    <string name="initialThings">Things haven’t started yet</string>
+    <string name="change">Change</string>
+    <string name="picture">Picture</string>
+    <string name="pressed">"The Change Button has been pressed "</string>
+    <string name="times">" times"</string>
+    <string name="dog">dog</string>
+    <string name="reset">reset</string>
+
+</resources>

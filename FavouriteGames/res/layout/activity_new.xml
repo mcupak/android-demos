@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".NewActivity" >
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/name" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtName"
+        android:layout_alignBottom="@+id/txtName"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@+id/txtName"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtName"
+        android:layout_below="@+id/edtName"
+        android:layout_marginTop="22dp"
+        android:text="@string/age" />
+
+    <EditText
+        android:id="@+id/edtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtAge"
+        android:layout_alignBottom="@+id/txtAge"
+        android:layout_alignLeft="@+id/edtName"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtAge"
+        android:layout_below="@+id/edtAge"
+        android:layout_marginTop="24dp"
+        android:text="@string/favouriteGame" />
+
+    <Spinner
+        android:id="@+id/spnGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/txtGame"
+        android:layout_alignLeft="@+id/btnAdd"
+        android:layout_alignRight="@+id/edtAge" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnDone"
+        android:layout_alignBottom="@+id/btnDone"
+        android:layout_alignRight="@+id/txtStatus"
+        android:onClick="addEntry"
+        android:text="@string/add" />
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/spnGame"
+        android:layout_marginBottom="16dp"
+        android:onClick="close"
+        android:text="@string/done" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnAdd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="96dp"
+        android:text="@string/incomplete"
+        android:visibility="invisible" />
+
+</RelativeLayout>

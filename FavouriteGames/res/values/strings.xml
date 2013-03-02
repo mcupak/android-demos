@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FavouriteGames</string>
+    <string name="menu_settings">Settings</string>
+    <string name="enterNames">Enter Names</string>
+    <string name="view">View</string>
+    <string name="store">Store</string>
+    <string name="load">Load</string>
+    <string name="exit">Exit</string>
+    <string name="title_activity_new">NewActivity</string>
+    <string name="name">Name:</string>
+    <string name="age">Age:</string>
+    <string name="favouriteGame">Favourite Game:</string>
+    <string name="add">Add</string>
+    <string name="done">Done</string>
+    <string name="added">Entry created.</string>
+    <string name="incomplete">Fill in all the fields.</string>
+    <string name="title_activity_view">ViewActivity</string>
+    <string name="title_activity_load">LoadActivity</string>
+    <string name="title_activity_store">StoreActivity</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="fileName">File name:</string>
+    <string name="override">Note: File will be overridden if it already exist.</string>
+    <string name="fileNameNonEmpty">File name cannot be empty.</string>
+    <string name="unsaved">Warning: Unsaved changes will be lost.</string>
+    <string name="chooseFile">Choose file to load:</string>
+    <string name="currentItems">Current data (name,age,favourite game):</string>
+    <string name="autosave">Note: All modifications will be saved on exit.</string>
+
+</resources>

@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/txtSelectedFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/selectedFile" />
+
+    <TextView
+        android:id="@+id/txtFileName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtSelectedFile"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/txtSelectedFile"
+        android:ellipsize="middle"
+        android:singleLine="true" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtStatus"
+        android:layout_alignLeft="@+id/txtSelectedFile"
+        android:layout_alignRight="@+id/txtFileName"
+        android:layout_below="@+id/txtSelectedFile"
+        android:layout_marginTop="5dp" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnDelete"
+        android:layout_alignBottom="@+id/btnDelete"
+        android:layout_alignRight="@android:id/list"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/btnReload"
+        android:onClick="showPicture"
+        android:text="@string/show" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+android:id/list"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/txtSelectedFile"
+        android:layout_marginBottom="14dp"
+        android:onClick="delete"
+        android:text="@string/delete" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnShow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:text="@string/shake" />
+
+    <Button
+        android:id="@+id/btnReload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnDelete"
+        android:layout_alignBottom="@+id/btnDelete"
+        android:layout_centerHorizontal="true"
+        android:onClick="reload"
+        android:text="@string/reload" />
+
+</RelativeLayout>
